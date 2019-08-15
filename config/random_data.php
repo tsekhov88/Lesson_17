@@ -10,7 +10,7 @@ return [
 		'Ford',
 		'Jaguar',
 		'Opel',
-	]
+	],
 
 	'car_models' => [
 		'Priora',

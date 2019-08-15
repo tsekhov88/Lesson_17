@@ -13,7 +13,7 @@ $factory->define(Car::class, function (Faker $faker) {
     return [
         'owner_name' => $faker->firstName,
         'car_brand' => $faker->randomElement($car_brands),
-        'car_models' => $faker->randomElement($car_models),
+        'car_model' => $faker->randomElement($car_models),
         'year' => $faker->numberBetween(1980, 2019),
         'distance' => $faker->numberBetween(10000, 50000),
 

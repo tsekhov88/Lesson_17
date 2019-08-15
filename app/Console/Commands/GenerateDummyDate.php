@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use App\Car;
 
 class GenerateDummyDate extends Command
 {
@@ -43,7 +44,7 @@ class GenerateDummyDate extends Command
         $this->info("Generating $count random records");
 
         for($i = 0; $i < $count; $i++){
-
+            factory(Car::class)->create();
         }
     }
 }
